@@ -29,6 +29,7 @@ pub fn mario() {
         }
         // left set of blocks 
         for _blocks in 0..row {
+            // hashes # have be replaced by unicode blocks :-)
             print!("\u{2593}");
         }
         // gap between left and right pyramid halves

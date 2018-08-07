@@ -7,7 +7,7 @@
 // for psets with further arguments , inputs start from argument three ie index 2
 mod hello; // pset1/hello
 mod mario_more; // pset1/mario/more
-use hello::helloc;
+use hello::halo;
 use mario_more::mario;
 use std::env;
 
@@ -18,7 +18,7 @@ fn main() {
     println!("{}" ,arg);
     match arg.trim() {
         // psets to run
-        "hello" => helloc(), // pset1/hello
+        "hello" => halo(), // pset1/hello
         "mario" => mario(), // pset1/mario/more
         _ => println!("nothing to do or check speling for program to run"),
     } 

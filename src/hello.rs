@@ -7,6 +7,6 @@ pset1: hello
 write as program that prints Hello World to screen
 */
 
-pub fn helloc() {
+pub fn halo() {
         println!("Hello, world")
 }
