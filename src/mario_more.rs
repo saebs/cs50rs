@@ -5,7 +5,7 @@
 // pset1/mario/more
 use std::io;
 
-fn main() {
+pub fn mario() {
     let n: i32;
     loop {
         println!("Height:");
@@ -29,13 +29,13 @@ fn main() {
         }
         // left set of blocks 
         for _blocks in 0..row {
-            print!("#");
+            print!("\u{2593}");
         }
         // gap between left and right pyramid halves
         print!("  ");
         // right pyramid half
         for _blocks in 0..row {
-            print!("#");
+            print!("\u{2593}");
         }
         // pyramid level finished
         println!(); 
