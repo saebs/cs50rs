@@ -18,8 +18,8 @@ fn main() {
     println!("{}" ,arg);
     match arg.trim() {
         // psets to run
-        "hello" => helloc(),
-        "mario" => mario(),
+        "hello" => helloc(), // pset1/hello
+        "mario" => mario(), // pset1/mario/more
         _ => println!("nothing to do or check speling for program to run"),
     } 
 }
