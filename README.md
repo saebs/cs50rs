@@ -4,8 +4,7 @@ Rust Implementation of Harvard's CS50 2018 psets
  
 Problem Set 0: Scratch (inapplicable)
  
-Problem Set 1: C ... to Rust(completed)
-    hello, mario/more, credit
+Problem Set 1: C ... to Rust(completed) - hello, mario/more, credit
  
 Problem Set 2: Crypto (pending)
  
