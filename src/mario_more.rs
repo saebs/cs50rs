@@ -5,7 +5,7 @@
 // pset1/mario/more
 use std::io;
 
-pub fn mario() {
+pub fn mario_() {
     let n: i32;
     loop {
         println!("Height:");
