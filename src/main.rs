@@ -12,22 +12,28 @@ use hello::hello_;
 use mario_more::mario_;
 use caesar::caesar_;
 use std::env;
+use std::process;
 
 
 fn main() {
     let cs50: Vec<String> = env::args().collect();
     if cs50.len() > 1 {
         let  pset = &cs50[1].to_lowercase();
-        println!("\n\u{25b6}  {}" , pset.to_uppercase()); // play button
-        println!("");
         match pset.trim() {
             // psets to run
-            "hello" => hello_(), // pset1/hello
-            "mario" => mario_(), // pset1/mario/more
-            "caesar" => caesar_(), //pset2/caesar
-            _ => println!("nothing to do or check spelling for program to run"),
+            "hello" => {intro(&cs50); hello_()}, // pset1/hello
+            "mario" => {intro(&cs50); mario_()}, // pset1/mario/more
+            "caesar" => {intro(&cs50); caesar_()}, //pset2/caesar
+            _ => process::exit(1), //eprintln!("see manifest file for list of psets"),
         } 
     } else{
-        println!("Usage: {} \"pset\" ", cs50[0]);
+        eprintln!("Usage: {} \"pset\" ", cs50[0]);
     }
+
+// helper function
+
+fn intro(cs: &Vec<String>){
+    println!("\n\u{25b6}  {}" , cs[1].to_uppercase()); // play button
 }
+}
+
