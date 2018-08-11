@@ -3,7 +3,7 @@
  
 Problem Set 0: Scratch (inapplicable)
  
-Problem Set 1: C ... (to Rust)
+Problem Set 1: C (to Rust)
 * hello
 * mario
 * credit*
@@ -25,4 +25,4 @@ Problem Set 7: C$50 Finance
 Problem Set 8: Mashup
 
 
-* not finished
+* \* not finished *
