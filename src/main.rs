@@ -14,17 +14,16 @@ use caesar::caesar_;
 use std::env;
 use std::process;
 
-
 fn main() {
     let cs50: Vec<String> = env::args().collect();
     if cs50.len() > 1 {
         let  pset = &cs50[1].to_lowercase();
         match pset.trim() {
             // psets to run
-            "hello" => {intro(&cs50); hello_()}, // pset1/hello
-            "mario" => {intro(&cs50); mario_()}, // pset1/mario/more
-            "caesar" => {intro(&cs50); caesar_()}, //pset2/caesar
-            _ => process::exit(1), //eprintln!("see manifest file for list of psets"),
+            "hello" => {intro(&cs50); hello_()}, 
+            "mario" => {intro(&cs50); mario_()}, 
+            "caesar" => {intro(&cs50); caesar_()}, 
+            _ => { eprintln!("see README.md file for list of pset names \n https://github.com/saebs/cs50rs/blob/master/README.md"); process::exit(1)}, //,
         } 
     } else{
         eprintln!("Usage: {} \"pset\" ", cs50[0]);
