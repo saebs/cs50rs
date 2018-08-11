@@ -1,7 +1,7 @@
 # cs50rs
 ## Rust Implementation of Harvard's CS50 2018 psets 
  
-Problem Set 0: Scratch (inapplicable)
+~~Problem Set 0: Scratch~~
  
 Problem Set 1: C (to Rust)
 * hello
