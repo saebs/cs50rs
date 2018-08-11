@@ -25,4 +25,4 @@ Problem Set 7: C$50 Finance
 Problem Set 8: Mashup
 
 
-* \* not finished *
+_ \* not finished_ 
