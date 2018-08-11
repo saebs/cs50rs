@@ -4,13 +4,13 @@
 Problem Set 0: Scratch (inapplicable)
  
 Problem Set 1: C ... (to Rust)
-..* hello
-..* mario
-..* credit*
+* hello
+* mario
+* credit*
  
 Problem Set 2: Crypto
-..* caesar, 
-..* crack*
+* caesar 
+* crack*
  
 Problem Set 3: Music
  
