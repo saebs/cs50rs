@@ -26,3 +26,9 @@ Problem Set 8: Mashup
 
 
 _\* not finished_ 
+
+##  Installation and running
+1. Make sure you have rust and cargo tool installed see https://www.rust-lang.org/en-US/
+2. In a terminal in project folder run
+cargo build --release
+3. ./cs50rs "pset" _"e.g ./cs50rs mario"_
