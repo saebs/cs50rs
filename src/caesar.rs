@@ -5,7 +5,7 @@ instruction: write a program that encrypts text using caesars cipher
 use std::env;
 use std::process;
 use std::io;
-const XXVI:  u8 = 26;
+const XXVI:  i32 = 26;
 const UCASE: u8 = 65;
 const LCASE: u8 = 97;
 
@@ -20,7 +20,7 @@ pub fn caesar_(){
     }
 
     // get key int
-    let key: u32 = match args[2].trim().parse() {
+    let key: i32 = match args[2].trim().parse() {
         Ok(k) => k,
         Err(_) => 0, 
     };
@@ -46,7 +46,7 @@ pub fn caesar_(){
             };
             // encrypt current xter
             let c = {
-                cipher(pi, key) + shift
+                cipher(pi , key) + shift
             };
             // print!("pi {} shift {}", pi, shift);
             print!("{}", c as char);
@@ -57,6 +57,6 @@ pub fn caesar_(){
     print!("\n");
 }
 
-fn cipher(pi: u8, key: u32) -> u8 {
-    (pi + key as u8) % XXVI
+fn cipher(pi: u8, key: i32) -> u8 {
+    ((pi as i32 + key ) % XXVI) as u8
 }
