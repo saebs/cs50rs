@@ -1,12 +1,13 @@
 # cs50rs
 ## Rust Implementation of Harvard's CS50 2018 psets 
+_NB: The whole idea for this project to learn rust as the author goes through the course , Some implementations have minor changes as a way to explore the nuances of the language so expect some non idiomatic rust code :- )_
  
 ~~Problem Set 0: Scratch~~
  
 Problem Set 1: C (to Rust)
 * hello
 * mario
-* credit*
+* credit
  
 Problem Set 2: Crypto
 * caesar 
