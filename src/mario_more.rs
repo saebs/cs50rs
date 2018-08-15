@@ -4,12 +4,14 @@
 // Instructor: David J Malan
 // pset1/mario/more
 use std::io;
+use std::io::Write;
 
 pub fn mario_() {
     let n: i32;
     loop {
-        println!("Height:");
+        print!("Height:");
         let mut height = String::new();
+        let _ = io::stdout().flush();
         io::stdin().read_line(&mut height).expect("Failed");
         let height: i32 = match height.trim().parse() {
             Ok(ht) => ht,
