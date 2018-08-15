@@ -5,6 +5,7 @@ instruction: write a program that encrypts text using caesars cipher
 use std::env;
 use std::process;
 use std::io;
+use std::io::Write;
 const XXVI:  i32 = 26;
 const UCASE: u8 = 65;
 const LCASE: u8 = 97;
@@ -25,11 +26,12 @@ pub fn caesar_(){
         Err(_) => 0, 
     };
     // prompt for plain text
-    println!("{}", key);
-    println!("Enter Text");
+    // eprintln!("{}", key);
+    print!("plaintext: ");
+    let _ = io::stdout().flush();
     let mut plaintxt = String::new();
     match io::stdin().read_line(&mut plaintxt) {
-        Ok(_txt) => {print!("plaintxt: {}",plaintxt)},
+        Ok(_) => {},
         Err(err) => println!("{}",err),
     };
     let plaintxt = plaintxt.as_str();
