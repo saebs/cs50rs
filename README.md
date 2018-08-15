@@ -19,7 +19,7 @@ Problem Set 4: Forensics
  
 Problem Set 5: Mispellings
  
-~~Problem Set 6: Déjà vu~~ _Porting pset1 and pset2 from C to Python_
+~~Problem Set 6: Déjà vu~~
  
 Problem Set 7: C$50 Finance
  
