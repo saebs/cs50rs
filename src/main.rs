@@ -8,9 +8,11 @@
 mod hello; // pset1/hello
 mod mario_more; // pset1/mario/more
 mod caesar; // pset2/caesar
+mod credit; // pset2/credit
 use hello::hello_;
 use mario_more::mario_;
 use caesar::caesar_;
+use credit::credit_;
 use std::env;
 use std::process;
 
@@ -23,6 +25,7 @@ fn main() {
             "hello" => {intro(&cs50); hello_()}, 
             "mario" => {intro(&cs50); mario_()}, 
             "caesar" => {intro(&cs50); caesar_()}, 
+            "credit" => {intro(&cs50); credit_()},
             _ => { eprintln!("see README.md file for list of pset names \n https://github.com/saebs/cs50rs/blob/master/README.md"); process::exit(1)}, //,
         } 
     } else{
