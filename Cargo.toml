@@ -1,6 +1,6 @@
 [package]
 name = "cs50rs"
 version = "0.1.0"
-authors = ["sabelo <sabelo@aziwear.co.zw>"]
+authors = ["sabelo <sabelo@aziwear.co.zw>ls"]
 
 [dependencies]
