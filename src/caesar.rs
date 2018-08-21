@@ -6,9 +6,9 @@ use std::env;
 use std::process;
 use std::io;
 use std::io::Write;
-const XXVI:  i32 = 26;
-const UCASE: u8 = 65;
-const LCASE: u8 = 97;
+const LETTERS:  i32 = 26;
+const UC: u8 = 65;
+const LC: u8 = 97;
 
 pub fn caesar_(){
     let args: Vec<String> = env::args().collect();
@@ -42,9 +42,9 @@ pub fn caesar_(){
         // ascii-code % a or A ascii code point = alphabetic index
         if p.is_alphabetic(){
             let (pi, shift) = if p.is_uppercase() {
-                (p as u8 % UCASE, UCASE)
+                (p as u8 % UC, UC)
             } else {
-                (p as u8 % LCASE, LCASE)
+                (p as u8 % LC, LC)
             };
             // encrypt current xter
             let c = {
@@ -60,5 +60,5 @@ pub fn caesar_(){
 }
 
 fn cipher(pi: u8, key: i32) -> u8 {
-    ((pi as i32 + key ) % XXVI) as u8
+    ((pi as i32 + key ) % LETTERS) as u8
 }
