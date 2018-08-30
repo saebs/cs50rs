@@ -16,7 +16,7 @@ pub fn caesar_(){
     // ./cs50rs -pset-name  --optional-pset-argument
     // there minimun arg length is 2 
     if args.len() == 2 || args.len() != 3 { 
-        eprintln!("Usage: {} {} k", args[0], args[1]);
+        writeln!(io::stderr(), "Usage:: cs50rs caesar k").unwrap();
         process::exit(1);
     }
 
