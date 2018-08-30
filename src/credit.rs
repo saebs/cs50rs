@@ -62,7 +62,7 @@ pub fn credit_() {
     // eprintln!("{}", sum);
     // checksum validation
     if sum%10 != 0 {
-        eprintln!("INVALID");
+        println!("INVALID");
         process::exit(1);
     }
 
