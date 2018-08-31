@@ -4,7 +4,9 @@
 
 _The project is an adaptation of Professor David malan's course problem sets originally done in c and some python. As a Rust language learning exercise. 
 So expect some treasonous non-idiomatic rust code and minor changes to original specs as I explore the nuances of the language_
+
 ~~Problem Set 0: Scratch~~
+
 Problem Set 1: C (to Rust)
 
 * hello
