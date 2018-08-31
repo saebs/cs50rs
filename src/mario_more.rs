@@ -6,7 +6,7 @@
 use std::io;
 use std::io::Write;
 
-pub fn mario_() {
+pub fn mario() {
     let n: i32;
     loop {
         print!("Height:");

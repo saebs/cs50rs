@@ -10,14 +10,15 @@ mod mario_more; // pset1/mario/more
 mod caesar; // pset2/caesar
 mod credit; // pset2/credit
 mod crack; // pset2/credit
-use hello::hello_;
-use mario_more::mario_;
-use caesar::caesar_;
-use credit::credit_;
-use crack::crack_;
+use hello::hello;
+use mario_more::mario;
+use caesar::caesar;
+use credit::credit;
+use crack::crack;
 
 use std::env;
 use std::process;
+use std::io::Write;
 
 fn main() {
     let cs50: Vec<String> = env::args().collect();
@@ -25,11 +26,11 @@ fn main() {
         let  pset = &cs50[1].to_lowercase();
         match pset.trim() {
             // psets to run
-            "hello" => {intro(&cs50); hello_()}, 
-            "mario" => {intro(&cs50); mario_()}, 
-            "caesar" => {intro(&cs50); caesar_()}, 
-            "credit" => {intro(&cs50); credit_()},
-            "crack" => {intro(&cs50); crack_()},
+            "hello" => {intro(&cs50); hello()}, 
+            "mario" => {intro(&cs50); mario()}, 
+            "caesar" => {intro(&cs50); caesar()}, 
+            "credit" => {intro(&cs50); credit()},
+            "crack" => {intro(&cs50); crack()},
             _ => { writeln!(std::io::stderr(),"see README.md file for list of pset names \n https://github.com/saebs/cs50rs/blob/master/README.md").unwrap(); process::exit(1)}, //,
         } 
     } else{

@@ -9,7 +9,7 @@ Implement a program that determines whether a provided credit card number is val
 use std::process;
 use std::io;
 use std::io::Write;
-pub fn credit_() {
+pub fn credit() {
     //  standard credit card number sizes
     const SXTN: usize = 16;
     const FFTN: usize = 15;
