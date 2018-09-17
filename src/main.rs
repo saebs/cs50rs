@@ -5,15 +5,12 @@
 */
 // The main.rs file is custom, commandline arguments will invoke the required module or pset to run
 // for psets with further arguments , inputs start from argument three ie index 2
-mod pset_01; // hello, mario(more comfortable), credit
-mod pset_02; // caesar, crack(pending calling c code lesson)
+mod pset1_rust; // hello, mario(more comfortable), credit
+mod pset2_crypto; // caesar, crack(pending calling c code lesson)
 
 // Problem sets
-use pset_01::hello;
-use pset_01::mario_more;
-use pset_01::credit;
-use pset_02::caesar;
-use pset_02::crack;
+use pset1_rust::*; // aka C
+use pset2_crypto::*; 
 // other 
 use std::env;
 use std::process;
@@ -30,6 +27,7 @@ fn main() {
             "caesar" => {intro(&cs50); caesar::play()}, 
             "credit" => {intro(&cs50); credit::play()},
             "crack" => {intro(&cs50); crack::play()},
+            "vigenere" =>{intro(&cs50); vigenere::play()}, 
             _ => { writeln!(std::io::stderr(),"see README.md file for list of pset names \n https://github.com/saebs/cs50rs/blob/master/README.md").unwrap(); process::exit(1)}, //,
         } 
     } else{
