@@ -10,7 +10,7 @@ const LETTERS:  i32 = 26;
 const UC: u8 = 65;
 const LC: u8 = 97;
 
-pub fn caesar(){
+pub fn play(){
     let args: Vec<String> = env::args().collect();
     // this custom implementation will require three arguments e.g:process
     // ./cs50rs -pset-name  --optional-pset-argument
