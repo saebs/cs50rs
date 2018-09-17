@@ -7,12 +7,14 @@
 // for psets with further arguments , inputs start from argument three ie index 2
 mod pset_01; // hello, mario(more comfortable), credit
 mod pset_02; // caesar, crack(pending calling c code lesson)
+
+// Problem sets
 use pset_01::hello;
 use pset_01::mario_more;
 use pset_01::credit;
 use pset_02::caesar;
 use pset_02::crack;
-
+// other 
 use std::env;
 use std::process;
 use std::io::Write;
@@ -31,7 +33,8 @@ fn main() {
             _ => { writeln!(std::io::stderr(),"see README.md file for list of pset names \n https://github.com/saebs/cs50rs/blob/master/README.md").unwrap(); process::exit(1)}, //,
         } 
     } else{
-        writeln!(std::io::stderr(), "Usage: cs50rs pset [option]").unwrap();
+        writeln!(std::io::stderr(), r##"Usage: cs50rs <pset name> 
+"see README.md file for list of pset names"##).unwrap();
     }
 
 // helper function
