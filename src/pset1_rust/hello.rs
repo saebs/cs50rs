@@ -7,6 +7,11 @@ pset1: hello
 write as program that prints Hello World to screen
 */
 
-pub fn play() {
-        println!("Hello, world")
-}
+// use Pset;
+// use Start;
+
+   pub   fn play() {
+                println!("Hello, world");
+        }
+
+
