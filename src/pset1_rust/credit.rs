@@ -12,7 +12,6 @@ use std::io::Write;
 // use Pset;
 // use Start;
 
-
 pub    fn play() {
         //  standard credit card number sizes
         const SXTN: usize = 16;
