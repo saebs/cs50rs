@@ -11,7 +11,7 @@ write as program that prints Hello World to screen
 // use Start;
 
    pub   fn play() {
-                println!("Hello, world");
+                println!("Hello, world \u{1f64b} ");
         }
 
 
