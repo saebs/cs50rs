@@ -1,5 +1,5 @@
-mod pset1_rust;
-mod pset2_crypto;
+// mod pset1_rust;
+// mod pset2_crypto;
 
 use pset1_rust::*; // aka C
 use pset2_crypto::*; 
