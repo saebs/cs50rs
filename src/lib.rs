@@ -1,24 +1,10 @@
-// mod pset1_rust;
-// mod pset2_crypto;
+pub mod pset1_rust;
+pub mod pset2_crypto;
 
-use pset1_rust::*; // aka C
-use pset2_crypto::*; 
+use crate::pset1_rust::*; // aka C
+use crate::pset2_crypto::*; 
 use std::process;
 use std::io::Write;
-
-// pub enum Pset {
-//     Hello,
-//     Mario,
-//     Caesar,
-//     Credit,
-//     Crack,
-//     Vigenere,
-// }
-
-// pub trait Start {
-//     fn play(&self) {}
-// }
-
 
 pub fn run(query: &Vec<String>) {
         let  pset = &query[1].to_lowercase();
